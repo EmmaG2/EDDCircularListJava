@@ -29,10 +29,10 @@ public class Lista {
     // Metodo para recorrer la lista
     public void showList() {
         Nodo auxiliar = ultimo.siguiente;
-        String listaNodos;
+        String listaNodos = "";
 
         do{
-            listaNodos = "[" + auxiliar.dato + "]->";
+            listaNodos = listaNodos + "[" + auxiliar.dato + "]->";
             auxiliar = auxiliar.siguiente;
         } while(auxiliar != ultimo.siguiente);
 
